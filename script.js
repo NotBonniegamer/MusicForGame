@@ -1,6 +1,6 @@
 // 1. Hier deine MP3-Dateien eintragen
 const songs = [
-    { title: "INDUSTRIAL HAVOC", file: "INDUSTRIAL HAVOC.mp3.mp3" },
+    { title: "INDUSTRIAL HAVOC", file: "INDUSTRIAL_HAVOC.mp3" },
     { title: "trailer", file: "trailer.mp3" },
     { title: "trailer2", file: "trailer2.mp3" },
     { title: "trailer3", file: "trailer3.mp3" },
