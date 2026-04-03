@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Playlist</title>
+    <title>My Music Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="background-decor"></div>
-
     <div class="container">
         <header>
             <h1>My Tracks</h1>
-            <p>© 2026 All Rights Reserved</p>
+            <p>© 2026 Alle Rechte vorbehalten</p>
         </header>
 
-        <div id="playlist" class="playlist-grid"></div>
+        <div class="playlist-grid">
+
+            <div class="song-card">
+                <h3>Sommer Beat 2026</h3>
+                <p>Kategorie: Deep House</p>
+                <audio controls>
+                    <source src="musik/sommer.mp3" type="audio/mpeg">
+                    Dein Browser unterstützt kein Audio.
+                </audio>
+            </div>
+            <div class="song-card">
+                <h3>Night Drive</h3>
+                <p>Kategorie: Lo-Fi</p>
+                <audio controls>
+                    <source src="musik/night-drive.mp3" type="audio/mpeg">
+                    Dein Browser unterstützt kein Audio.
+                </audio>
+            </div>
+            </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
