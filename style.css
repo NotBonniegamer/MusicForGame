@@ -1,81 +1,63 @@
-:root {
-    --glass: rgba(255, 255, 255, 0.1);
-    --text: #ffffff;
-    --accent: #00d4ff;
-}
-
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: var(--text);
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #eeeeee;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-/* Hintergrund-Deko */
-.background-decor {
-    position: fixed;
-    top: -10%;
-    right: -10%;
-    width: 400px;
-    height: 400px;
-    background: var(--accent);
-    filter: blur(150px);
-    opacity: 0.2;
-    z-index: -1;
 }
 
 .container {
     width: 90%;
-    max-width: 1000px;
-    padding: 40px 0;
+    max-width: 1100px;
+    padding: 50px 0;
 }
 
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 h1 {
-    font-size: 3rem;
-    letter-spacing: -1px;
-    background: linear-gradient(to right, #00d4ff, #00ffaa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    color: #00adb5;
 }
 
-/* Die Song-Karten */
+/* Das Raster für die Songs */
 .playlist-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
 }
 
+/* Die einzelne Song-Karte */
 .song-card {
-    background: var(--glass);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #1e1e1e;
     padding: 20px;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .song-card:hover {
+    border-color: #00adb5;
     transform: translateY(-5px);
-    border-color: var(--accent);
 }
 
 .song-card h3 {
-    margin-top: 0;
-    font-weight: 500;
+    margin: 0 0 10px 0;
+    color: #00adb5;
+}
+
+.song-card p {
+    font-size: 0.9rem;
+    color: #888;
 }
 
 audio {
     width: 100%;
     margin-top: 15px;
-    height: 35px;
-    filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Macht den Standard-Player schicker */
+    filter: invert(100%) hue-rotate(180deg) brightness(1.5);
 }
