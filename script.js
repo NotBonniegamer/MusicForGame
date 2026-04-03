@@ -1,9 +1,13 @@
 // 1. Hier deine MP3-Dateien eintragen
 const songs = [
-    { title: "Erster Beat", file: "track1.mp3" },
-    { title: "Cooler Remix", file: "remix.mp3" },
-    { title: "Night Drive", file: "night_drive.mp3" },
-    { title: "Work in Progress", file: "test.mp3" }
+    { title: "INDUSTRIAL HAVOC", file: "INDUSTRIAL HAVOC.mp3.mp3" },
+    { title: "trailer", file: "trailer.mp3" },
+    { title: "trailer2", file: "trailer2.mp3" },
+    { title: "trailer3", file: "trailer3.mp3" },
+    { title: "trailer4", file: "trailer4.mp3" },
+    { title: "song_0001", file: "song_0001.mp3" },
+    { title: "song_0002", file: "song_0002.mp3" }
+
 ];
 
 // 2. Den Ort in der HTML finden, wo die Songs hin sollen
