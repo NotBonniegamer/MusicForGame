@@ -1,2 +1,2 @@
-# MusicForGame
-just music
+Copyright © Yunix
+All Rights Reserved
