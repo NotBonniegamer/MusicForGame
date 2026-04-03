@@ -1,0 +1,81 @@
+:root {
+    --glass: rgba(255, 255, 255, 0.1);
+    --text: #ffffff;
+    --accent: #00d4ff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Hintergrund-Deko */
+.background-decor {
+    position: fixed;
+    top: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: var(--accent);
+    filter: blur(150px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    background: linear-gradient(to right, #00d4ff, #00ffaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Die Song-Karten */
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.song-card {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.song-card h3 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+    height: 35px;
+    filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Macht den Standard-Player schicker */
+}
